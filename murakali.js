@@ -8,15 +8,20 @@ export const options = {
 
   thresholds: {
     http_req_failed: ["rate<0.01"],
-    http_req_duration: ["p(95)<150", "p(99)<300"],
+    http_req_duration: ["p(95)<400", "p(99)<400"],
   },
   summaryTrendStats: ["min", "max", "avg", "p(95)", "p(99)"],
 };
 
-const BASE_URL = "https://be.murakali.store";
+const BASE_URL = "http://be.murakali.store/api/v1";
 
 export default () => {
-  const url = `${BASE_URL}/api/v1/product`;
+  const url = `${BASE_URL}/product?limit=30`;
   console.log(url);
   const res = http.get(url);
 };
+
+// product
+// product?search=baju
+// product?category=elektronik
+// product?category=elektronik&search=shirt

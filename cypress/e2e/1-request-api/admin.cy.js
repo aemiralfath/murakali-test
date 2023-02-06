@@ -1,8 +1,7 @@
 /// <reference types="cypress" />
 
 context("Login By Admin", () => {
-  // const endpoint = "https://6ef6-143-92-127-33.ap.ngrok.io/api/v1/";
-  const endpoint = "https://2661-103-75-52-42.ngrok.io/api/v1/";
+  const endpoint = "https://be.murakali.store/api/v1/";
   const expectedTime = 400;
   let token = "";
 
