@@ -1,0 +1,20 @@
+{
+  "name": "murakali-testing-be",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-open": "npx cypress open",
+    "test-run": "npx cypress run"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.garena.com/excel.cornelius/murakali-testing-be.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.5.0"
+  }
+}
