@@ -3,8 +3,8 @@
 context("Login By Guest", () => {
     const endpoint = "https://be.murakali.store/api/v1/";
     const expectedTime = 400;
-    let productID = "917061f5-23db-46d4-a0aa-2649ef284de6";
-    let sellerID = "698145bc-c599-4ff4-952e-d1152720e382"
+    let productID = "951d7435-2173-4ce1-90b2-276541cf52d2";
+    let sellerID = "e8854443-c2c7-488e-93d5-b9d93708b8a3"
   
     it("product detail", () => {
       let startTime;
