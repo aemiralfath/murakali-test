@@ -6,7 +6,8 @@
   "scripts": {
     "test-open": "npx cypress open",
     "test-run": "npx cypress run",
-    "k6": "k6 run murakali.js"
+    "k6": "k6 run murakali.js",
+    "test-upload": "npx cypress run --record --key 481bb7a6-9624-437a-9517-6c14a95f1dac"
     
   },
   "repository": {
