@@ -4,7 +4,7 @@ import { check, group, sleep, fail } from "k6";
 export const options = {
   vus: 1,
   iterations: 1,
-  // duration: "10s",
+  duration: "10s",
 
   thresholds: {
     http_req_failed: ["rate<0.01"],
@@ -16,7 +16,7 @@ export const options = {
 const BASE_URL = "http://be.murakali.store/api/v1";
 
 export default () => {
-  const url = `${BASE_URL}/product?limit=30`;
+  const url = `${BASE_URL}/product`;
   console.log(url);
   const res = http.get(url);
 };
